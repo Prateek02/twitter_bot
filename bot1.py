@@ -96,7 +96,7 @@ def main():
                 post="{}?ref=pr #scholarship #helptostudy #student ".format(tweet)
                 t.statuses.update(status=post)
                 print(post, end='\n\n')
-                time.sleep(480)
+                time.sleep(300)// 300=5minutes
             except StopIteration:
                 news_iterators[i] = globals()[newsfuncs[i]]()
 
