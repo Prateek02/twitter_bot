@@ -93,7 +93,7 @@ def main():
         for i, iterator in enumerate(news_iterators):
             try:
                 tweet = next(iterator)
-                post="{} #scholarship #helptostudy #student ".format(tweet)
+                post="{}?ref=pr #scholarship #helptostudy #student ".format(tweet)
                 t.statuses.update(status=post)
                 print(post, end='\n\n')
                 time.sleep(480)
